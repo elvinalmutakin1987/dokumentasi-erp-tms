@@ -1,0 +1,11 @@
+site_name: PT. Tunas Mitra Sejati
+theme: readthedocs
+nav:
+  - Selamat Datang: index.md
+  - Alur Sistem: alursistem.md
+  - Akses Aplikasi: akses.md
+  - Dashboard: dashboard.md
+  - Setting: setting.md
+  - Master Data: master-data.md
+markdown_extensions:
+  - attr_list

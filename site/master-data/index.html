@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Master Data - PT. Tunas Mitra Sejati</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Master Data";
+        var mkdocs_page_input_path = "master-data.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PT. Tunas Mitra Sejati
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Selamat Datang</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alursistem/">Alur Sistem</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../akses/">Akses Aplikasi</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../setting/">Setting</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Master Data</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-service">1. Service</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-menambah-service-baru">1.1 Menambah Service Baru</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-mengedit-service">1.2 Mengedit Service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-menambah-item">1.3 Menambah Item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14-menghapus-item">1.4 Menghapus Item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15-menghapus-service">1.5 Menghapus Service</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-contract">2. Contract</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-menambah-kontrak">2.1 Menambah Kontrak</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-mengedit-kontrak">2.2 Mengedit Kontrak</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-mengubah-status-kontrak">2.3 Mengubah Status Kontrak</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-menghapus-kontrak">2.4 Menghapus Kontrak</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-unit">3. Unit</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-menambah-unit">3.1 Menambah Unit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-mengedit-unit">3.2 Mengedit Unit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-menghapus-unit">3.3 Menghapus Unit</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-unit-model">4. Unit Model</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-menambah-unit-model">4.1 Menambah Unit Model</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-mengedit-unit-model">4.2 Mengedit Unit Model</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-menghapus-unit-model">4.3 Menghapus Unit Model</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-unit-brand">5. Unit Brand</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-menambah-brand">5.1 Menambah Brand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-mengedit-brand">5.2 Mengedit Brand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#53-menghapus-brand">5.3 Menghapus Brand</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-unit-rate">6. Unit Rate</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-menambah-unit-rate">6.1 Menambah Unit Rate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-mengedit-unit-rate">6.2 Mengedit Unit Rate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#63-menghapus-unit-rate">6.3 Menghapus Unit Rate</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-location">7. Location</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-menambah-lokasi">7.1 Menambah Lokasi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-mengedit-lokasi">7.2 Mengedit Lokasi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#73-menghapus-lokasi">7.3 Menghapus Lokasi</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-mro-item">8. MRO Item</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-menambah-mro-item">8.1 Menambah MRO Item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-mengedit-mro-item">8.2 Mengedit MRO Item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#83-menghapus-mro-item">8.3 Menghapus MRO Item</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-client-vendor">9. Client &amp; Vendor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-menambah-client">9.1 Menambah Client</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#92-menambah-vendor">9.2 Menambah Vendor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#93-mengedit-client">9.3 Mengedit Client</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#94-mengedit-vendor">9.4 Mengedit Vendor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#95-menghapus-client-vendor">9.5 Menghapus Client &amp; Vendor</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ringkasan">Ringkasan</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PT. Tunas Mitra Sejati</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Master Data</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="panduan-menu-master-data">Panduan Menu Master Data</h1>
+<p>Menu <strong>Master Data</strong> pada aplikasi ini digunakan untuk mengelola data dasar yang penting bagi sistem, seperti data Service, Contract, Unit, Unit Model, Unit Brand, Unit Rate, Location, MRO Item dan Client &amp; Vendor. Berikut adalah penjelasan yang lebih sederhana mengenai cara mengelola setiap bagian di menu <strong>Master Data</strong>.</p>
+<hr />
+<h2 id="1-service">1. Service</h2>
+<p>Halaman <strong>Service</strong> digunakan untuk mengelola <strong>Service</strong> dalam sistem. Di halaman ini, Anda dapat melihat daftar <strong>Service</strong> yang sudah ada, menambah <strong>Service</strong> baru, mengedit <strong>Service</strong> yang sudah ada, atau menghapus <strong>Service</strong> yang tidak diperlukan.</p>
+<p><center>
+<img alt="" src="/assets/images/service-index.png" />
+</center></p>
+<h3 id="11-menambah-service-baru">1.1 Menambah Service Baru</h3>
+<p>Untuk menambahkan layanan baru, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Service"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/service-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan, seperti <strong>Type</strong> (jenis layanan) dan <strong>Name</strong> (nama layanan).
+<center>
+<img alt="" src="/assets/images/service-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan layanan baru.</p>
+</li>
+</ul>
+<h3 id="12-mengedit-service">1.2 Mengedit Service</h3>
+<p>Untuk mengedit layanan yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar layanan, temukan layanan yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah layanan tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/service-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/service-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="13-menambah-item">1.3 Menambah Item</h3>
+<p><strong>Item Service</strong> adalah modul khusus yang digunakan untuk memproses layanan yang ditagihkan kepada PT. Kaltim Prima Coal. Modul ini dirancang agar sesuai dengan sistem penagihan yang diterapkan oleh PT. Kaltim Prima Coal, sehingga memudahkan dalam pengelolaan tagihan dan pembayaran.</p>
+<p>Untuk menambahkan <strong>Item Service</strong> dalam sistem, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Masukkan nomor item.
+<center>
+<img alt="" src="/assets/images/service-item-no.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Masukkan deskripsi item.
+<center>
+<img alt="" src="/assets/images/service-description.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Untuk menambah item baru pada <strong>Service</strong>, klik tombol <strong>"+"</strong> yang terletak di formulir.
+<center>
+<img alt="" src="/assets/images/approvalflow-add-step.png" width="50%" />
+</center></p>
+</li>
+</ul>
+<h3 id="14-menghapus-item">1.4 Menghapus Item</h3>
+<ul>
+<li>Untuk menghapus item dalam <strong>Service</strong>, klik tombol <strong>Trash</strong> yang terletak di formulir.
+<center>
+<img alt="" src="/assets/images/service-delete-item-button.png" width="50%" />
+</center></li>
+</ul>
+<h3 id="15-menghapus-service">1.5 Menghapus Service</h3>
+<p>Untuk menghapus <strong>Service</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Service</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>User</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/service-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Service</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Service</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="2-contract">2. Contract</h2>
+<p>Halaman <strong>Contract</strong> digunakan untuk mengelola data kontrak per Client (misalnya PT. Kaltim Prima Coal). Data kontrak ini biasanya dipakai sebagai acuan periode kerja sama (tanggal mulai–akhir) dan status kontrak yang masih berlaku.</p>
+<h3 id="21-menambah-kontrak">2.1 Menambah Kontrak</h3>
+<p>Untuk menambahkan kontrak baru, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Contract"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/contract-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/contract-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan kontrak baru.</p>
+</li>
+</ul>
+<h3 id="22-mengedit-kontrak">2.2 Mengedit Kontrak</h3>
+<p>Untuk mengedit kontrak yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar kontrak, temukan kontrak yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah kontrak tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/contract-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/contract-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="23-mengubah-status-kontrak">2.3 Mengubah Status Kontrak</h3>
+<p>Untuk mengubah status kontrak, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Service</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Contract</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/contract-deactive-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Activate"</strong> untuk mengaktifkan kontrak. <strong>Pilih "Deactive"</strong> untuk menonaktifkan kontrak. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda mengubah <strong>Status</strong> kontrak tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi</strong> untuk mengubah <strong>Status</strong> dari kontrak.
+<center>
+<img alt="" src="/assets/images/contract-deactive-confirm.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<h3 id="24-menghapus-kontrak">2.4 Menghapus Kontrak</h3>
+<p>Untuk menghapus <strong>Contract</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Contract</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Contract</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/contract-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Contract</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Contract</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="3-unit">3. Unit</h2>
+<p>Halaman <strong>Unit</strong> digunakan untuk mengelola data <strong>Unit</strong> yang dipakai dalam operasional (misalnya alat berat atau kendaraan). Data unit ini penting karena biasanya akan dipakai di modul lain atau proses transaksi lainnya.</p>
+<h3 id="31-menambah-unit">3.1 Menambah Unit</h3>
+<p>Untuk menambahkan unit baru, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Unit"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/unit-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/unit-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan unit baru.</p>
+</li>
+</ul>
+<h3 id="32-mengedit-unit">3.2 Mengedit Unit</h3>
+<p>Untuk mengedit unit yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar unit, temukan unit yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah unit tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/unit-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/unit-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="33-menghapus-unit">3.3 Menghapus Unit</h3>
+<p>Untuk menghapus <strong>Unit</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Unit</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Unit</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/unit-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Unit</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Unit</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="4-unit-model">4. Unit Model</h2>
+<p>Halaman <strong>Unit Model</strong> digunakan untuk mengelola daftar <strong>Model</strong> berdasarkan <strong>brand/merek</strong>. Data ini biasanya dipakai saat membuat data <strong>Unit</strong>, supaya pilihan model sudah tersedia dan penulisan menjadi konsisten (tidak berbeda-beda).</p>
+<h3 id="41-menambah-unit-model">4.1 Menambah Unit Model</h3>
+<p>Untuk menambahkan model, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Model"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/unitmodel-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/unitmodel-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan model baru.</p>
+</li>
+</ul>
+<h3 id="42-mengedit-unit-model">4.2 Mengedit Unit Model</h3>
+<p>Untuk mengedit model yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar model, temukan model yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah model tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/unitmodel-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/unitmodel-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="43-menghapus-unit-model">4.3 Menghapus Unit Model</h3>
+<p>Untuk menghapus <strong>Model</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Model</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Model</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/unitmodel-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Model</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Model</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="5-unit-brand">5. Unit Brand</h2>
+<p>Halaman <strong>Unit Brand</strong> digunakan untuk mengelola daftar <strong>brand/merek unit</strong> (contoh: Toyota). Data brand ini menjadi <strong>data referensi</strong> yang akan dipakai pada menu lain, terutama saat mengisi <strong>Unit</strong> dan <strong>Unit Model</strong>, agar penulisan merek selalu konsisten dan rapi.</p>
+<h3 id="51-menambah-brand">5.1 Menambah Brand</h3>
+<p>Untuk menambahkan brand baru, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Brand"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/unitbrand-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/unitbrand-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan brand baru.</p>
+</li>
+</ul>
+<h3 id="52-mengedit-brand">5.2 Mengedit Brand</h3>
+<p>Untuk mengedit brand yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar brand, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah brand tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/unitbrand-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/unitbrand-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="53-menghapus-brand">5.3 Menghapus Brand</h3>
+<p>Untuk menghapus <strong>Brand</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Brand</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Brand</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/unitbrand-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Brand</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Brand</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="6-unit-rate">6. Unit Rate</h2>
+<p>Halaman <strong>Unit Rate</strong> digunakan untuk mengatur <strong>tarif (rate)</strong> sebuah <strong>unit</strong> berdasarkan <strong>kontrak</strong> dan <strong>client</strong> tertentu. Data ini biasanya menjadi acuan utama saat proses perhitungan biaya/penagihan, karena satu unit bisa memiliki rate yang berbeda untuk kontrak yang berbeda.</p>
+<h3 id="61-menambah-unit-rate">6.1 Menambah Unit Rate</h3>
+<p>Untuk menambahkan rate, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Rate"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/unitrate-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/unitrate-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan rate baru.</p>
+</li>
+</ul>
+<h3 id="62-mengedit-unit-rate">6.2 Mengedit Unit Rate</h3>
+<p>Untuk mengedit rate yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar rate, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah brand tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/unitrate-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/unitrate-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="63-menghapus-unit-rate">6.3 Menghapus Unit Rate</h3>
+<p>Untuk menghapus <strong>Unit Rate</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Unit Rate</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Unit Rate</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/unitrate-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Unit Rate</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Unit Rate</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="7-location">7. Location</h2>
+<p>Halaman <strong>Location</strong> digunakan untuk mengelola daftar <strong>lokasi</strong> yang dipakai di dalam aplikasi. Lokasi ini biasanya menjadi referensi saat mengisi data di modul lain, misalnya untuk menentukan:</p>
+<ul>
+<li><strong>Lokasi proyek</strong> (Project Location), atau</li>
+<li><strong>Lokasi unit/asset</strong> (Unit Location)</li>
+</ul>
+<h3 id="71-menambah-lokasi">7.1 Menambah Lokasi</h3>
+<p>Untuk menambahkan lokasi, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Location"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/location-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/location-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan lokasi baru.</p>
+</li>
+</ul>
+<h3 id="72-mengedit-lokasi">7.2 Mengedit Lokasi</h3>
+<p>Untuk mengedit lokasi yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar lokasi, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah brand tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/location-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/location-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="73-menghapus-lokasi">7.3 Menghapus Lokasi</h3>
+<p>Untuk menghapus <strong>Location</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Location</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Location</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/location-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Location</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Location</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="8-mro-item">8. MRO Item</h2>
+<p>Halaman <strong>MRO Item</strong> digunakan untuk mengelola daftar <strong>item MRO</strong> (Maintenance, Repair, and Operations), yaitu barang yang dipakai untuk kebutuhan <strong>perawatan, perbaikan, dan operasional</strong> unit/asset.</p>
+<p>Contoh item MRO:</p>
+<ul>
+<li>Oli</li>
+<li>Tang</li>
+<li>Filter, grease, dan kebutuhan maintenance lainnya</li>
+</ul>
+<p>Data MRO Item ini biasanya dipakai di modul lain (misalnya pengadaan/purchasing atau kebutuhan maintenance), agar penamaan item dan nomor part <strong>seragam</strong> dan mudah dilacak.</p>
+<h3 id="81-menambah-mro-item">8.1 Menambah MRO Item</h3>
+<p>Untuk menambahkan item, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Item"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/mroitem-add-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/mroitem-add.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan item baru.</p>
+</li>
+</ul>
+<h3 id="82-mengedit-mro-item">8.2 Mengedit MRO Item</h3>
+<p>Untuk mengedit item yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar item, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah brand tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/mroitem-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/mroitem-edit.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="83-menghapus-mro-item">8.3 Menghapus MRO Item</h3>
+<p>Untuk menghapus <strong>Item</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>MRO Item</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Item</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/mroitem-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Item</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Item</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="9-client-vendor">9. Client &amp; Vendor</h2>
+<p>Halaman <strong>Client &amp; Vendor</strong> digunakan untuk mengelola data <strong>Client</strong> dan <strong>Vendor</strong> yang terhubung dengan aktivitas bisnis di aplikasi.</p>
+<ul>
+<li><strong>Client</strong> = pihak pelanggan/perusahaan yang menerima layanan (contoh: PT. Kaltim Prima Coal)</li>
+<li><strong>Vendor</strong> = pihak pemasok/penyedia barang/jasa (misalnya supplier alat, spare part, atau jasa tertentu)</li>
+</ul>
+<p>Data ini biasanya dipakai di modul lain seperti <strong>Contract</strong>, <strong>Unit Rate</strong>, <strong>Procurement</strong>, dan proses penagihan.</p>
+<h3 id="91-menambah-client">9.1 Menambah Client</h3>
+<p>Untuk menambahkan client, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Client"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/clientvendor-addclient-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/clientvendor-add-client.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan client baru.</p>
+</li>
+</ul>
+<h3 id="92-menambah-vendor">9.2 Menambah Vendor</h3>
+<p>Untuk menambahkan vendor, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Klik tombol <strong>"+ New Vendor"</strong> yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+<img alt="" src="/assets/images/clientvendor-addvendor-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Isi semua informasi yang diperlukan.
+<center>
+<img alt="" src="/assets/images/clientvendor-add-vendor.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan vendor baru.</p>
+</li>
+</ul>
+<h3 id="93-mengedit-client">9.3 Mengedit Client</h3>
+<p>Untuk mengedit client yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar client, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah <strong>Client &amp; Vendor</strong> tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/clientvendor-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/clientvendor-edit-client.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="94-mengedit-vendor">9.4 Mengedit Vendor</h3>
+<p>Untuk mengedit vendor yang sudah ada, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Pada daftar client, temukan brand yang ingin Anda edit. Klik tombol <strong>Action</strong> di sebelah <strong>Client &amp; Vendor</strong> tersebut. Pilih opsi <strong>Edit</strong> dari dropdown yang muncul.
+<center>
+<img alt="" src="/assets/images/clientvendor-edit-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p>Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+<img alt="" src="/assets/images/clientvendor-edit-vendor.png" width="50%" />
+</center></p>
+</li>
+<li>
+<p>Setelah selesai, klik tombol <strong>Save</strong> untuk menyimpan perubahan.</p>
+</li>
+</ul>
+<h3 id="95-menghapus-client-vendor">9.5 Menghapus Client &amp; Vendor</h3>
+<p>Untuk menghapus <strong>Client/Vendor</strong> yang tidak diperlukan lagi, lakukan langkah-langkah berikut:</p>
+<ul>
+<li>
+<p><strong>Klik Tombol "Action"</strong> di sebelah kanan <strong>Client &amp; Vendor</strong> yang ingin Anda hapus. Tombol <strong>Action</strong> berada di samping setiap <strong>Item</strong> yang terdaftar dalam tabel.
+<center>
+<img alt="" src="/assets/images/clientvendor-delete-button.png" width="25%" />
+</center></p>
+</li>
+<li>
+<p><strong>Pilih "Delete"</strong> dari dropdown menu. Setelah memilih <strong>Delete</strong>, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus <strong>Client/Vendor</strong> tersebut.</p>
+</li>
+<li>
+<p><strong>Konfirmasi Penghapusan</strong> untuk menghapus <strong>Client/Vendor</strong> dari daftar.
+<center>
+<img alt="" src="/assets/images/confirm-button.png" width="40%" />
+</center></p>
+</li>
+</ul>
+<hr />
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Menu <strong>Master Data</strong> berfungsi sebagai pusat pengelolaan <strong>data referensi</strong> yang menjadi dasar berjalannya seluruh proses di aplikasi. Data seperti <strong>Service, Contract, Unit, Unit Brand, Unit Model, Unit Rate, Location, MRO Item, serta Client &amp; Vendor</strong> perlu diisi dengan benar dan dijaga konsistensinya, karena akan dipakai lintas modul—mulai dari operasional, pengadaan, hingga perhitungan biaya dan penagihan.</p>
+<p>Secara umum, cara pengelolaannya dibuat seragam agar mudah digunakan: pengguna dapat <strong>menambah</strong> data melalui tombol <strong>New</strong>, lalu melakukan <strong>Edit</strong> atau <strong>Delete</strong> melalui menu <strong>Action</strong> pada tabel. Fitur <strong>Search</strong> dan <strong>filter</strong> juga membantu mempercepat pencarian data yang diperlukan, terutama ketika jumlah data sudah banyak.</p>
+<p>Selain data umum, aplikasi juga mendukung kebutuhan tertentu sesuai klien. Contohnya, <strong>Item Service untuk PT. Kaltim Prima Coal</strong> dibuat sebagai modul khusus agar proses penagihan dapat mengikuti format dan ketentuan sistem billing di pihak client. Dengan Master Data yang tertata rapi, proses input menjadi lebih cepat, risiko data ganda atau salah tulis bisa ditekan, dan hasil perhitungan maupun penagihan menjadi lebih akurat.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../setting/" class="btn btn-neutral float-left" title="Setting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../setting/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
