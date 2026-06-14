@@ -16,7 +16,7 @@ Halaman **Service** digunakan untuk mengelola **Service** dalam sistem. Di halam
 
 Untuk menambahkan layanan baru, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Service"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/service-add-button.png){: width="25%"    }
 </center>
@@ -98,7 +98,7 @@ Halaman **Contract** digunakan untuk mengelola data kontrak per Client (misalnya
 
 Untuk menambahkan kontrak baru, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Contract"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/contract-add-button.png){: width="25%"    }
 </center>
@@ -168,7 +168,7 @@ Halaman **Unit** digunakan untuk mengelola data **Unit** yang dipakai dalam oper
 
 Untuk menambahkan unit baru, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Unit"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/unit-add-button.png){: width="25%"    }
 </center>
@@ -222,7 +222,7 @@ Halaman **Unit Model** digunakan untuk mengelola daftar **Model** berdasarkan **
 
 Untuk menambahkan model, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Model"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/unitmodel-add-button.png){: width="25%"    }
 </center>
@@ -276,7 +276,7 @@ Halaman **Unit Brand** digunakan untuk mengelola daftar **brand/merek unit** (co
 
 Untuk menambahkan brand baru, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Brand"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/unitbrand-add-button.png){: width="25%"    }
 </center>
@@ -330,7 +330,7 @@ Halaman **Unit Rate** digunakan untuk mengatur **tarif (rate)** sebuah **unit** 
 
 Untuk menambahkan rate, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Rate"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/unitrate-add-button.png){: width="25%"    }
 </center>
@@ -387,7 +387,7 @@ Halaman **Location** digunakan untuk mengelola daftar **lokasi** yang dipakai di
 
 Untuk menambahkan lokasi, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Location"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/location-add-button.png){: width="25%"    }
 </center>
@@ -433,23 +433,23 @@ Untuk menghapus **Location** yang tidak diperlukan lagi, lakukan langkah-langkah
 
 ---
 
-## 8. MRO Item
+## 8. Maintenance Item
 
-Halaman **MRO Item** digunakan untuk mengelola daftar **item MRO** (Maintenance, Repair, and Operations), yaitu barang yang dipakai untuk kebutuhan **perawatan, perbaikan, dan operasional** unit/asset.
+Halaman **Maintenance Item** digunakan untuk mengelola daftar **item maintenanance** (Maintenance, Repair, and Operations), yaitu kelompok barang yang dipakai untuk kebutuhan **perawatan, perbaikan, dan operasional** unit/asset.
 
-Contoh item MRO:
+Contoh item maintenance:
 
-- Oli
-- Tang
-- Filter, grease, dan kebutuhan maintenance lainnya
+- Roda
+- Mesin
+- Dan kebutuhan maintenance lainnya
 
-Data MRO Item ini biasanya dipakai di modul lain (misalnya pengadaan/purchasing atau kebutuhan maintenance), agar penamaan item dan nomor part **seragam** dan mudah dilacak.
+Data Mainteannce Item ini biasanya dipakai di modul lain (MRO Item).
 
-### 8.1 Menambah MRO Item
+### 8.1 Menambah Maintenance Item
 
 Untuk menambahkan item, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Item"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/mroitem-add-button.png){: width="25%"    }
 </center>
@@ -461,7 +461,41 @@ Untuk menambahkan item, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan item baru.
 
-### 8.2 Mengedit MRO Item
+### 8.2 Mengedit Maintenance Item
+
+### 8.3 Menghapus Maintenance Item
+
+---
+
+## 9. MRO Item
+
+Halaman **MRO Item** digunakan untuk mengelola daftar **item MRO** (Maintenance, Repair, and Operations), yaitu barang yang dipakai untuk kebutuhan **perawatan, perbaikan, dan operasional** unit/asset.
+
+Contoh item MRO:
+
+- Oli
+- Tang
+- Filter, grease, dan kebutuhan maintenance lainnya
+
+Data MRO Item ini biasanya dipakai di modul lain (misalnya pengadaan/purchasing atau kebutuhan maintenance), agar penamaan item dan nomor part **seragam** dan mudah dilacak.
+
+### 9.1 Menambah MRO Item
+
+Untuk menambahkan item, ikuti langkah-langkah berikut:
+
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+<center>
+![](/assets/images/mroitem-add-button.png){: width="25%"    }
+</center>
+
+- Isi semua informasi yang diperlukan.
+<center>
+![](/assets/images/mroitem-add.png){: width="50%"    }
+</center>
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan item baru.
+
+### 9.2 Mengedit MRO Item
 
 Untuk mengedit item yang sudah ada, ikuti langkah-langkah berikut:
 
@@ -477,7 +511,7 @@ Untuk mengedit item yang sudah ada, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
 
-### 8.3 Menghapus MRO Item
+### 9.3 Menghapus MRO Item
 
 Untuk menghapus **Item** yang tidak diperlukan lagi, lakukan langkah-langkah berikut:
 
@@ -495,7 +529,7 @@ Untuk menghapus **Item** yang tidak diperlukan lagi, lakukan langkah-langkah ber
 
 ---
 
-## 9. Client & Vendor
+## 10. Client & Vendor
 
 Halaman **Client & Vendor** digunakan untuk mengelola data **Client** dan **Vendor** yang terhubung dengan aktivitas bisnis di aplikasi.
 
@@ -504,11 +538,11 @@ Halaman **Client & Vendor** digunakan untuk mengelola data **Client** dan **Vend
 
 Data ini biasanya dipakai di modul lain seperti **Contract**, **Unit Rate**, **Procurement**, dan proses penagihan.
 
-### 9.1 Menambah Client
+### 10.1 Menambah Client
 
 Untuk menambahkan client, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Client"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/clientvendor-addclient-button.png){: width="25%"    }
 </center>
@@ -520,11 +554,11 @@ Untuk menambahkan client, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan client baru.
 
-### 9.2 Menambah Vendor
+### 10.2 Menambah Vendor
 
 Untuk menambahkan vendor, ikuti langkah-langkah berikut:
 
-- Klik tombol **"+ New Vendor"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
 <center>
 ![](/assets/images/clientvendor-addvendor-button.png){: width="25%"    }
 </center>
@@ -536,7 +570,7 @@ Untuk menambahkan vendor, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan vendor baru.
 
-### 9.3 Mengedit Client
+### 10.3 Mengedit Client
 
 Untuk mengedit client yang sudah ada, ikuti langkah-langkah berikut:
 
@@ -552,7 +586,7 @@ Untuk mengedit client yang sudah ada, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
 
-### 9.4 Mengedit Vendor
+### 10.4 Mengedit Vendor
 
 Untuk mengedit vendor yang sudah ada, ikuti langkah-langkah berikut:
 
@@ -568,7 +602,7 @@ Untuk mengedit vendor yang sudah ada, ikuti langkah-langkah berikut:
 
 - Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
 
-### 9.5 Menghapus Client & Vendor
+### 10.5 Menghapus Client & Vendor
 
 Untuk menghapus **Client/Vendor** yang tidak diperlukan lagi, lakukan langkah-langkah berikut:
 

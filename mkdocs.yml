@@ -5,7 +5,14 @@ nav:
   - Alur Sistem: alursistem.md
   - Akses Aplikasi: akses.md
   - Dashboard: dashboard.md
-  - Setting: setting.md
+  - Equipment: equipment.md
+  - Survey: survey.md
+  - Safety: safety.md
+  - Purchase Requisition: purchase-requisition.md
+  - Procurement: procurement.md
+  - Finance: finance.md
+  - Approval: approval.md
   - Master Data: master-data.md
+  - Setting: setting.md
 markdown_extensions:
   - attr_list
