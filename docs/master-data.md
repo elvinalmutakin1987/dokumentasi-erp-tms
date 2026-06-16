@@ -8,11 +8,9 @@ Menu **Master Data** pada aplikasi ini digunakan untuk mengelola data dasar yang
 
 Halaman **Service** digunakan untuk mengelola **Service** dalam sistem. Di halaman ini, Anda dapat melihat daftar **Service** yang sudah ada, menambah **Service** baru, mengedit **Service** yang sudah ada, atau menghapus **Service** yang tidak diperlukan.
 
-<center>
-![](/assets/images/service-index.png)
-</center>
+![Service Index](/assets/images/service-index.png){ style="display: block; margin: 0 auto;" width="50%" }
 
-### 1.1 Menambah Service Baru
+### 1.1 Menambah Service
 
 Untuk menambahkan layanan baru, ikuti langkah-langkah berikut:
 
@@ -463,7 +461,35 @@ Untuk menambahkan item, ikuti langkah-langkah berikut:
 
 ### 8.2 Mengedit Maintenance Item
 
+Untuk mengedit item yang sudah ada, ikuti langkah-langkah berikut:
+
+- Pada daftar item, temukan brand yang ingin Anda edit. Klik tombol **Action** di sebelah brand tersebut. Pilih opsi **Edit** dari dropdown yang muncul.
+<center>
+![](/assets/images/mroitem-edit-button.png){: width="25%"    }
+</center>
+
+- Ubah informasi yang ingin diperbarui di formulir edit.
+<center>
+![](/assets/images/mroitem-edit.png){: width="50%"    }
+</center>
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
+
 ### 8.3 Menghapus Maintenance Item
+
+Untuk menghapus **Item** yang tidak diperlukan lagi, lakukan langkah-langkah berikut:
+
+- **Klik Tombol "Action"** di sebelah kanan **Maintenance Item** yang ingin Anda hapus. Tombol **Action** berada di samping setiap **Item** yang terdaftar dalam tabel.
+<center>
+![](/assets/images/mroitem-delete-button.png){: width="25%"}
+</center>
+
+- **Pilih "Delete"** dari dropdown menu. Setelah memilih **Delete**, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus **Item** tersebut.
+
+- **Konfirmasi Penghapusan** untuk menghapus **Item** dari daftar.
+<center>
+![](/assets/images/confirm-button.png){: width="40%"}
+</center>
 
 ---
 
