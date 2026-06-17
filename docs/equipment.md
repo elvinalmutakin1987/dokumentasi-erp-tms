@@ -99,3 +99,101 @@ Untuk menghapus **P2H** yang tidak diperlukan lagi, lakukan langkah-langkah beri
 
 - **Konfirmasi Penghapusan** untuk menghapus **P2H** dari daftar.
 ![P2H Index](/assets/images/p2h/confirm-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+---
+
+## 3. Mechanical Inspection
+
+Halaman **Mechanical Inspection** digunakan untuk mengelola data pemeriksaan mekanis kendaraan atau unit dalam sistem. Di halaman ini, Anda dapat melihat daftar **Mechanical Inspection** yang sudah tercatat, menambah data pemeriksaan baru, mengedit data yang sudah ada, atau menghapus data yang tidak diperlukan.
+
+Menu **Mechanical Inspection** berfungsi untuk menyimpan informasi terkait hasil pemeriksaan kondisi mekanis kendaraan, seperti kondisi mesin, sistem rem, suspensi, transmisi, kelistrikan, ban, serta komponen pendukung lainnya. Data ini membantu pengguna dalam memantau kondisi teknis kendaraan secara lebih detail, memastikan kendaraan layak digunakan, mendeteksi potensi kerusakan sejak awal, serta mendukung proses perawatan, perbaikan, dan evaluasi operasional kendaraan.
+
+### 3.1 Menambah Inspection
+
+Untuk menambahkan **Mechanical Inspection** baru, ikuti langkah-langkah berikut:
+
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+
+![Mechanical Inspection Index](/assets/images/mechanical_inspection/index.png){ style="display: block; margin: 0 auto;" }
+
+- Isi semua informasi yang diperlukan, seperti data unit, date, shift, driver dan KM Start & KM Finish.
+
+![Mechanical Inspection Add](/assets/images/mechanical_inspection/add-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan **Mechanical Inspection** baru.
+
+### 3.2 Mengedit Mechanical Inspection
+
+Untuk mengedit **Mechanical Inspection** yang sudah ada, ikuti langkah-langkah berikut:
+
+- Pada daftar mechanical inspection, temukan data yang ingin Anda edit. Klik tombol **Action** di sebelah data tersebut. Pilih opsi **Edit** dari dropdown yang muncul.
+
+![Mechanical Inspection Index](/assets/images/mechanical_inspection/edit-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Ubah informasi yang ingin diperbarui di formulir edit.
+
+![Mechanical Inspection Index](/assets/images/mechanical_inspection/save-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
+
+### 3.3 Menghapus Mechanical Inspection
+
+Untuk menghapus **Mechanical Inspection** yang tidak diperlukan lagi, lakukan langkah-langkah berikut:
+
+- **Klik Tombol "Action"** di sebelah kanan **Mechanical Inspection** yang ingin Anda hapus. Tombol **Action** berada di samping setiap **Mechanical Inspection** yang terdaftar dalam tabel.
+
+![Mechanical Inspection Index](/assets/images/mechanical_inspection/delete-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- **Pilih "Delete"** dari dropdown menu. Setelah memilih **Delete**, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus **Mechanical Inspection** tersebut.
+
+- **Konfirmasi Penghapusan** untuk menghapus **Mechanical Inspection** dari daftar.
+![Mechanical Inspection Index](/assets/images/mechanical_inspection/confirm-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+---
+
+## 4. Repair & Maintenance
+
+Halaman **Repair & Maintenance** digunakan untuk mengelola data perbaikan dan perawatan kendaraan dalam sistem. Di halaman ini, Anda dapat melihat daftar **Repair & Maintenance** yang sudah tercatat, menambah data perbaikan atau perawatan baru, mengedit data yang sudah ada, atau menghapus data yang tidak diperlukan.
+
+Menu **Repair & Maintenance** berfungsi untuk menyimpan informasi terkait aktivitas perbaikan, jadwal perawatan, jenis kerusakan, tindakan perbaikan yang dilakukan, penggunaan suku cadang, biaya perawatan, serta status penyelesaian pekerjaan. Data ini membantu pengguna dalam memantau riwayat perbaikan kendaraan, memastikan kendaraan mendapatkan perawatan secara berkala, mengurangi risiko kerusakan berulang, serta mendukung proses evaluasi dan pengendalian operasional kendaraan.
+
+### 4.1 Menambah Maintenance
+
+Untuk menambahkan **Repair & Maintenance** baru, ikuti langkah-langkah berikut:
+
+- Klik tombol **"+ New"** yang terletak di bagian atas kanan halaman. Akan muncul formulir untuk memasukkan data baru.
+
+![Repair & Maintenance Index](/assets/images/repair_maintenance/index.png){ style="display: block; margin: 0 auto;" }
+
+- Isi semua informasi yang diperlukan, seperti data unit, date, shift, driver dan KM Start & KM Finish.
+
+![Repair Maintenance Add](/assets/images/repair_maintenance/add-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan **Repairt & Maintenance** baru.
+
+### 4.2 Mengedit Maintenance
+
+Untuk mengedit **Repair & Maintenance** yang sudah ada, ikuti langkah-langkah berikut:
+
+- Pada daftar Maintenance, temukan data yang ingin Anda edit. Klik tombol **Action** di sebelah data tersebut. Pilih opsi **Edit** dari dropdown yang muncul.
+
+![Repair Maintenance Index](/assets/images/repair_maintenance/edit-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Ubah informasi yang ingin diperbarui di formulir edit.
+
+![Repair Maintenance Index](/assets/images/repair_maintenance/save-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- Setelah selesai, klik tombol **Save** untuk menyimpan perubahan.
+
+### 4.3 Menghapus Maintenance
+
+Untuk menghapus **Repair & Maintenance** yang tidak diperlukan lagi, lakukan langkah-langkah berikut:
+
+- **Klik Tombol "Action"** di sebelah kanan **Repair & Maintenance** yang ingin Anda hapus. Tombol **Action** berada di samping setiap **Repair & Maintenance** yang terdaftar dalam tabel.
+
+![Repair Maintenance Index](/assets/images/repair_maintenance/delete-button.png){ style="display: block; margin: 0 auto;" width="50%" }
+
+- **Pilih "Delete"** dari dropdown menu. Setelah memilih **Delete**, sistem akan meminta konfirmasi untuk memastikan Anda ingin menghapus **Repair & Maintenance** tersebut.
+
+- **Konfirmasi Penghapusan** untuk menghapus **Repair & Maintenance** dari daftar.
+![Repair Maintenance Index](/assets/images/repair_maintenance/confirm-button.png){ style="display: block; margin: 0 auto;" width="50%" }
